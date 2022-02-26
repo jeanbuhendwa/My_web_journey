@@ -1,0 +1,25 @@
+body{
+    color: #555;
+    background-color: #34495E;
+}
+.list-wrapper{
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+}
+.list {
+    list-style: none;
+}
+.list-item{
+    display: flex;
+}
+.list-item-image{
+    flex-shrink: 0;
+}
+.list-item-image img{
+    width: 100px;
+    height: 100px;
+}
+.list-item-content{
+    flex-grow: 1;
+}
