@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/all.css">
+
+    <title>Side Bar</title>
+    <style type="text/css">
+        body{
+            background-color: #dfe5eb;
+            color: #555;
+            text-transform: capitalize;
+        }
+        .container{
+            margin: 30px auto;
+            background-color: #fff;
+            width: 80%;
+            max-width: 300px;
+            box-shadow: 0 3px 6px #AEB6BF;
+            border-radius: 10px;
+        }
+        .container .sidebar{
+            display: flex;
+            flex-direction: column;
+        }
+        .container .sidebar .sidebar-logo{
+            flex-shrink: 0;
+            text-align: center;
+            text-transform: uppercase;
+            color: #ccc;
+        }
+        .container .sidebar .sidebar-navigation{
+            flex-grow: 1;
+        }
+        .container .sidebar .sidebar-navigation ul{
+            list-style: none;
+            padding: 0px;
+        }
+        .container .sidebar .sidebar-navigation ul li{
+            padding: 15px;
+            cursor: pointer;
+            font-size: 18px;
+            color: #283747;
+        }
+        .container .sidebar .sidebar-navigation ul li i{
+            display: inline-block;
+            padding-right: 10px;
+            width: 25px;
+            text-align: center;
+        }
+        .container .sidebar .sidebar-navigation #active,
+        .container .sidebar .sidebar-navigation ul li:hover{
+            background-color: #AEB6BF;
+            color: #283747;
+        }
+        .sidebar-profile{
+            flex-shrink: 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .sidebar-profile img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            box-shadow: 0 2px 2px #AEB6BF;
+        }
+        .sidebar-profile h4{
+            margin-top: 0px;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <h2>logo here</h2>
+            </div>
+            <div class="sidebar-navigation">
+                <ul>
+                    <li id="active"><i class="fa-solid fa-house-user"></i>Home</li>
+                    <li> <i class="fa-solid fa-address-card"></i>About me</li>
+                    <li><i class="fa-solid fa-code"></i>Protofolio</li>
+                    <li><i class="fa-solid fa-address-book"></i></i>Contact Me</li>
+                </ul>
+            </div>
+            <div class="sidebar-profile">
+                <img src="../img/profile1.png" alt="profile">
+                <h4>John Buhendwa</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
