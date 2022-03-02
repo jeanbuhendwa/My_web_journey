@@ -47,3 +47,17 @@ function checkDriverAge2(age){
         return "Powering on, enjoy your ride";
     }
 }
+
+var list = ["tiger", "cat", "bear", "bird"];
+console.log(list);
+
+var list2 =  [
+    ["tiger", "cat", "bear","bird"]
+]
+
+var myArray = ["Banana", "Apples", "Oranges", "Blueberries"];
+
+var myArray2 = ["Banana", ["Apples", ["Oranges"], "Bllueberries"]];
+// How to access a inside the array
+var ans = myArray2[1][1][0];
+alert(ans);
