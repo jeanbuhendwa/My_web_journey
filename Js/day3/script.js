@@ -1,25 +1,33 @@
-var user = {
-    name : "John",
-    age : 32,
-    isMarried : true,
-    hobby : "coding",
-    fruits : ["banana", "orange", "pineapple"],
-    Alert : function (){
-        alert("Ooopsss");
-    }
-};
+// var user = {
+//     name : "John",
+//     age : 32,
+//     isMarried : true,
+//     hobby : "coding",
+//     fruits : ["banana", "orange", "pineapple"],
+//     Alert : function (){
+//         alert("Ooopsss");
+//     }
+// };
 
-var list = [
+// var list = [
+//     {
+//         username : "JohnBuh",
+//         password : "secret",
+//     },
+//     {
+//         username : "jbrng",
+//         password : "secret",
+//     }
+// ];
+var database = [
     {
-        username : "JohnBuh",
-        password : "secret",
+        username : "Simon",
+        password : "12345",
     },
     {
-        username : "jbrng",
-        password : "secret",
-    }
-];
-var database = [
+        username : "JB",
+        password : "54321",
+    },
     {
         username: "john",
         password: "secret",
@@ -40,12 +48,27 @@ var newsFeed = [
 var usernamePrompt = prompt("Enter your username: ");
 var passwordPrompt = prompt("Enter your password: ");
 
-function signIn (user, pass){
-    if (user === database[0].username && pass === database[0].password){
-        console.log(newsFeed);
-    } else {
-        alert("Ooops!!! Please enter correct information")
+function isUserValid(user, pass){
+    for (var i=0; i<database.length; i++){
+        if (database[i].username === user && database[i].password === pass){
+            return true;
+        }
     }
+    return false;
+}
+
+function signIn (user, pass){
+    if (isUserValid(user, pass)){
+        console.log(newsFeed);
+    }else{
+        alert("You have entered the wrong information");
+    }
+    
+    // if (user === database[0].username && pass === database[0].password){
+    //     console.log(newsFeed);
+    // } else {
+    //     alert("Ooops!!! Please enter correct information")
+    // }
 }
 
 signIn(usernamePrompt, passwordPrompt);
