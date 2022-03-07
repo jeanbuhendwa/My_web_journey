@@ -1,0 +1,6 @@
+body{
+    background: linear-gradient(to right, red, yellow);
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 25px;
+}
