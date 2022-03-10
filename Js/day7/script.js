@@ -38,3 +38,16 @@ const object4 = {
         console.log(this);
     }
 }
+
+//Es7 .include and square math 
+//includes 
+let myArray = ['dog', 'horse', 'cat'];
+myArray.includes('dog'); //true 
+myArray.includes('rabbit'); // false
+
+//square
+
+const square = (x) => x**2;
+const cube = (x) =>{
+    return x**3;
+}
