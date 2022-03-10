@@ -23,3 +23,18 @@ const reduceArray = array.reduce((accumulator, num) =>{
 }, 0);
 
 console.log("reduce ", reduceArray);
+
+// Advanced object in javascript es6
+// reference type 
+
+const object1 = { value : 10};
+const object2 = object1;
+const object3 = { value : 10};
+
+//context vs scope 
+
+const object4 = {
+    a: function (){
+        console.log(this);
+    }
+}
