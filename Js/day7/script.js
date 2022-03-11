@@ -51,3 +51,4 @@ const square = (x) => x**2;
 const cube = (x) =>{
     return x**3;
 }
+
