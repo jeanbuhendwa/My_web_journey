@@ -82,4 +82,58 @@ for (item of 'fruit'){
 for (item in detailedFruit){
     console.log(item);
 }
-//the end of the day 
+
+//ES2020
+// BigInt 
+
+var num = 2;
+typeof num; // number 
+typeof 2n; // bigint 
+
+
+//Optional chaining operator ?. 
+let john_pokemon = {
+    pikachu : {
+        species : 'mouse pokemon',
+        height : 8.9,
+        weight : 50,
+    }
+}
+//by using the if statement
+
+// if (john_pokemon.pikachu && john_pokemon.pikachu.weight){
+//     const weight2 = john_pokemon.pikachu.weight;
+//     console.log(weight2);
+// } else{
+//     console.log(weight2)
+// }
+
+//using the Optional chaining operator
+
+const weightTot = john_pokemon?.kooobo?.weight;
+console.log(weightTot);
+
+//Nullish coalescing operator 
+
+let judas_pokemon = {
+    pikachu : {
+        name : "game",
+        scpecies : "snake pokemon",
+        power : "Hello ",
+    }
+}
+
+const power = judas_pokemon?.pikachu?.power || "No power"; // by using Or operator
+console.log('OR ', power);
+
+const powerNull = judas_pokemon?.pikachu?.power ?? "No power"; // by using Nullish coalescing operator
+console.log('Nullish ', powerNull); 
+
+//ES2021 
+//Replace all function 
+const str = "Hello, Javascript is the best of the best";
+const newStr = str.replace('best', 'better');
+const newStrAll = str.replaceAll('best', 'worst');
+
+console.log('Replace ', newStr);
+console.log('replace all ', newStrAll);
