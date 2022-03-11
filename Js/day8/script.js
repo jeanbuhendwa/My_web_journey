@@ -82,3 +82,4 @@ for (item of 'fruit'){
 for (item in detailedFruit){
     console.log(item);
 }
+//the end
