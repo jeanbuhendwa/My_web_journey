@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp Box</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container-check">
+        <button class="button" onclick="openPop()">Check me</button>
+    </div>
+    <div class="popup" id="popup">
+        <img src="../../img/profile1.png" alt="profile">
+        <h2>John Buhendwa</h2>
+        <p>Hello, my name is john, i am a self taught web development, kindly visit my <a href="https://github.com/jeanbuhendwa">GitHub</a>. Thanks so much.</p>
+        <button onclick="closePop()">Close me</button>
+    </div>
+    <script type="text/javascript">
+        let popup = document.getElementById("popup");
+
+        function openPop(){
+            popup.classList.add("popStyle");
+        }
+        function closePop(){
+            popup.classList.remove("popStyle");
+        }
+    </script>
+</body>
+</html>

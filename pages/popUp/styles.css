@@ -1,0 +1,76 @@
+.container-check{
+    background: #fff;
+    text-align: center;
+    top: 45%;
+    left: 45%;
+    border: 2px dashed #85929E;
+    box-shadow: 0 2px 3px #85929E;
+    border-radius: 6px;
+    position: absolute;
+    padding: 10px
+}
+
+.container-check .button{
+    padding: 8px 10px;
+    border: 2px solid #85929E;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font-size: 15px;
+    background-color: #85929E;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+
+.popup{
+    background: #fff;
+    width: 400px;
+    text-align: center;
+    border: 1px solid #85929E;
+    box-shadow: 0 2px 3px #85929E;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 0 30px 30px;
+    transform: translate(-50%, -50%) scale(0.1);
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.popup img {
+    margin-top: -50px;
+    width: 100px;
+    border-radius: 50%;
+}
+.popup h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #283747;
+}
+.popup p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 530;
+    font-size: 16px;
+    color: #283747;
+}
+.popup button{
+    padding: 8px 10px;
+    border: 2px solid #85929E;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font-size: 15px;
+    background-color: #85929E;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+
+.popStyle{
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+}
